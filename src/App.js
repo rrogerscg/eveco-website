@@ -1,35 +1,24 @@
 import './App.css';
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Pricing from "./pages/Projects";
+import Projects from "./pages/Projects";
 import About from "./pages/About";
-import Projects from "./pages/Pricing";
+import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
+import {Routes, Route} from "react-router-dom";
 
 function App() {
-    let component;
-    switch (window.location.pathname){
-        case "/":
-            component = <Home />
-            break
-        case "/pricing":
-            component = <Pricing />
-            break
-        case "/about":
-            component = <About />
-            break
-        case "/projects":
-            component = <Projects />
-            break
-        case "/contact":
-            component = <Contact />
-            break
-    }
   return (
     <div className="App">
       <Navbar />
         <div className="container">
-            {component}
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/pricing" element={<Pricing />} />
+            </Routes>
         </div>
     </div>
   );
