@@ -3,13 +3,13 @@ import {Link, useMatch, useResolvedPath} from "react-router-dom";
 
 export default function Navbar() {
     return <nav className="nav">
-        <Link to="/" className="site-title">EvEco</Link>
+        <Link to="/eveco-website" className="site-title">EvEco</Link>
         <ul>
-            <CustomLink to="/">EvEco</CustomLink>
-            <CustomLink to="/projects">Projects</CustomLink>
-            <CustomLink to="/pricing">Pricing</CustomLink>
-            <CustomLink to="/about">About</CustomLink>
-            <CustomLink to="/contact">Contact</CustomLink>
+            <CustomLink to="/eveco-website">EvEco</CustomLink>
+            <CustomLink to="/eveco-website/projects">Projects</CustomLink>
+            <CustomLink to="/eveco-website/pricing">Pricing</CustomLink>
+            <CustomLink to="/eveco-website/about">About</CustomLink>
+            <CustomLink to="/eveco-website/contact">Contact</CustomLink>
         </ul>
     </nav>
 }
