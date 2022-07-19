@@ -1,0 +1,9 @@
+.hero-title {
+    font-size: 8rem;
+}
+
+@media (max-width: 32em) {
+    .hero-title{
+        font-size: 20vw;
+    }
+}
