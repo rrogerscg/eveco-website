@@ -1,3 +1,10 @@
+import "./index.css";
+
 export default function Home() {
-    return <h1>Home</h1>
+    return (
+        <div>
+            <h1 className="hero-title">EvEco</h1>
+            <hr />
+        </div>
+    );
 }

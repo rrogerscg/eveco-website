@@ -6,6 +6,8 @@
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    position: sticky;
+    top: 0;
 }
 
 .site-title{
@@ -33,4 +35,31 @@
 
 .nav li:hover {
     background-color: #777;
+}
+
+@media (max-width: 32em){
+    .nav {
+        background-color: red;
+        flex-direction: column;
+        justify-content: start;
+        width: 7.5em;
+        height: 100vh;
+        float: left;
+    }
+
+    .site-title{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        margin-top: 2em;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+
+    .nav a {
+        height: 100%;
+    }
 }
