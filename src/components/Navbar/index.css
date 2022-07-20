@@ -1,6 +1,5 @@
 .nav {
-    background-color: #333;
-    color: white;
+    background-color: #232A1C;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -30,36 +29,37 @@
 }
 
 .nav li.active {
-    background-color: #555;
+    background-color: #493421;
 }
 
 .nav li:hover {
-    background-color: #777;
+    background-color: #493421;
 }
 
 @media (max-width: 32em){
     .nav {
-        background-color: red;
         flex-direction: column;
         justify-content: start;
         width: 7.5em;
         height: 100vh;
         float: left;
-    }
-
-    .site-title{
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        margin-top: 2em;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .nav ul {
         flex-direction: column;
         height: 100%;
         font-size: 1.5rem;
+        width: 100%;
     }
 
     .nav a {
         height: 100%;
+        padding-left: 0.5em;
+    }
+
+    .site-title{
+        font-size: 2rem;
     }
 }
