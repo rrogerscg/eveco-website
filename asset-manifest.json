@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/eveco-website/static/css/main.47ff7214.css",
-    "main.js": "/eveco-website/static/js/main.1cd7f135.js",
+    "main.css": "/eveco-website/static/css/main.47306435.css",
+    "main.js": "/eveco-website/static/js/main.32aec650.js",
     "static/js/787.55c7f652.chunk.js": "/eveco-website/static/js/787.55c7f652.chunk.js",
     "static/media/topographical-map.svg": "/eveco-website/static/media/topographical-map.27442f2e1ab204a7a1d1.svg",
     "index.html": "/eveco-website/index.html",
-    "main.47ff7214.css.map": "/eveco-website/static/css/main.47ff7214.css.map",
-    "main.1cd7f135.js.map": "/eveco-website/static/js/main.1cd7f135.js.map",
+    "main.47306435.css.map": "/eveco-website/static/css/main.47306435.css.map",
+    "main.32aec650.js.map": "/eveco-website/static/js/main.32aec650.js.map",
     "787.55c7f652.chunk.js.map": "/eveco-website/static/js/787.55c7f652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ff7214.css",
-    "static/js/main.1cd7f135.js"
+    "static/css/main.47306435.css",
+    "static/js/main.32aec650.js"
   ]
 }
