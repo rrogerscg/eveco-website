@@ -17,9 +17,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   background-image: url("../public/topographical-map.svg");
-  background-color: #111111;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #111111;
+}
+
+hr {
+  border: 1px solid white;
+  background-color: white;
 }
 
 code {
@@ -28,15 +33,24 @@ code {
 }
 
 .container {
-  margin: 1rem;
+  margin: 0 auto;
   text-align: center;
-  background-color: #222;
+  background-color: #111111;
+  height: 100vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-item {
+  margin: 1rem;
 }
 
 @media (max-width: 32em){
-
   .container {
-    margin: 0;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
   }
 }
