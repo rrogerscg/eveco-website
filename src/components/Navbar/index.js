@@ -5,10 +5,10 @@ export default function Navbar() {
         <Link to="/eveco-website" className="site-title">EvEco</Link>
         <ul>
             <CustomLink to="/eveco-website">Home</CustomLink>
-            <CustomLink to="/projects">Projects</CustomLink>
-            <CustomLink to="/pricing">Pricing</CustomLink>
-            <CustomLink to="/about">About</CustomLink>
-            <CustomLink to="/contact">Contact</CustomLink>
+            <CustomLink to="/eveco-website/projects">Projects</CustomLink>
+            <CustomLink to="/eveco-website/pricing">Pricing</CustomLink>
+            <CustomLink to="/eveco-website/about">About</CustomLink>
+            <CustomLink to="/eveco-website/contact">Contact</CustomLink>
         </ul>
     </nav>
 }

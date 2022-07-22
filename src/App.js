@@ -13,10 +13,10 @@ function App() {
         <div className="container">
             <Routes>
                 <Route path="/eveco-website" element={<Home />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/eveco-website/projects" element={<Projects />} />
+                <Route path="/eveco-website/about" element={<About />} />
+                <Route path="/eveco-website/contact" element={<Contact />} />
+                <Route path="/eveco-website/pricing" element={<Pricing />} />
             </Routes>
         </div>
     </div>
