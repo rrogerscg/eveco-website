@@ -1,0 +1,19 @@
+/* Table of contents
+  -------------------------------
+  -- base imports
+  -- components imports
+  -- layout imports
+  -- pages imports
+  -- themes imports
+  -- vendors imports
+*/
+
+// layouts
+@use "layout/layout";
+
+// pages
+@use "pages/home";
+
+// components
+@use "components/navbar";
+@use "components/button";

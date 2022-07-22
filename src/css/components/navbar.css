@@ -1,0 +1,66 @@
+/* color */
+/* images */
+.nav {
+  background-color: #232A1C;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.nav li.active {
+  background-color: #493421;
+}
+
+.nav li:hover {
+  background-color: #493421;
+}
+
+@media (max-width: 32em) {
+  .nav {
+    flex-direction: column;
+    justify-content: start;
+    width: 7.5em;
+    height: 100vh;
+    float: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .nav ul {
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .nav a {
+    height: 100%;
+    padding-left: 0.5em;
+  }
+  .site-title {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

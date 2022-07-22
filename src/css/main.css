@@ -1,0 +1,200 @@
+/* color */
+/* images */
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #E6CE9A;
+  border: none;
+}
+
+.App {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282C34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  width: 100%;
+}
+
+body, html, #root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/topographical-map.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #111111;
+}
+
+hr {
+  border: 0.1rem solid #232A1C;
+  background-color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #111111;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.85;
+  flex-grow: 1;
+}
+
+.container-item {
+  margin: 1rem;
+}
+
+@media (max-width: 32em) {
+  .App {
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+  }
+  .container {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+  }
+}
+.hero-title {
+  font-size: 15vw;
+}
+
+@media (max-width: 32em) {
+  .hero-title {
+    font-size: 20vw;
+  }
+}
+.nav {
+  background-color: #232A1C;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+.nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav a {
+  color: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.nav li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.nav li.active {
+  background-color: #493421;
+}
+
+.nav li:hover {
+  background-color: #7B532E;
+}
+
+@media (max-width: 32em) {
+  .nav {
+    flex-direction: column;
+    justify-content: start;
+    width: 7.5em;
+    height: 100vh;
+    float: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .nav ul {
+    flex-direction: column;
+    height: 100%;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .nav li {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .nav a {
+    height: 100%;
+  }
+  .site-title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.btn-primary {
+  background-color: #A6AD86;
+  padding: 1rem 2rem;
+}
+
+.btn-secondary {
+  background-color: #232A1C;
+  padding: 1rem 2rem;
+}
+
+.btn-warning {
+  background-color: yellow;
+  padding: 1rem 2rem;
+}
+
+.btn-error {
+  background-color: red;
+  padding: 1rem 2rem;
+}
+
+.btn-info {
+  background-color: blue;
+  padding: 1rem 2rem;
+}
+
+.btn-success {
+  background-color: green;
+  padding: 1rem 2rem;
+}
+
+/* Table of contents
+  -------------------------------
+  -- base imports
+  -- components imports
+  -- layout imports
+  -- pages imports
+  -- themes imports
+  -- vendors imports
+*/
+
+/*# sourceMappingURL=main.css.map */

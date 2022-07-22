@@ -1,0 +1,11 @@
+.hero-title {
+  font-size: 15vw;
+}
+
+@media (max-width: 32em) {
+  .hero-title {
+    font-size: 20vw;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

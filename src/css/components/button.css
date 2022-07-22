@@ -1,0 +1,27 @@
+/* color */
+/* images */
+.btn-primary {
+  background-color: #A6AD86;
+}
+
+.btn-secondary {
+  background-color: #232A1C;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+.btn-info {
+  background-color: blue;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+/*# sourceMappingURL=button.css.map */

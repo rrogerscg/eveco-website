@@ -1,0 +1,27 @@
+/* color */
+
+$light-green:   #A6AD86;
+$dark-green:    #232A1C;
+$cream:         #E6CE9A;
+$dark-brown:    #493421;
+$medium-brown:  #623D2A;
+$light-brown:   #7B532E;
+$aqua:          #5EB8AC;
+$red:           #5E221B;
+$medium-blue:   #61758E;
+$light-blue:    #77A5DF;
+$dark-black:    #222222;
+
+$theme-colors: (
+  "primary": $light-green,
+  "secondary": $dark-green,
+  "warning": yellow,
+  "error": red,
+  "info": blue,
+  "success": green
+);
+
+
+/* images */
+
+$topo-map: url("../../../public/topographical-map.svg");

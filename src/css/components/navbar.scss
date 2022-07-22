@@ -1,5 +1,7 @@
+@use '../abstracts/variables' as *;
+
 .nav {
-    background-color: #232A1C;
+    background-color: $dark-green;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -9,15 +11,13 @@
     top: 0;
 }
 
-.site-title{
+.site-title {
     font-size: 2rem;
 }
-
 .nav ul {
     margin: 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
 }
 
 .nav a {
@@ -27,16 +27,22 @@
     align-items: center;
     padding: .25rem;
 }
+.nav li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
 
 .nav li.active {
-    background-color: #493421;
+    background-color: $dark-brown;
 }
 
 .nav li:hover {
-    background-color: #493421;
+    background-color: $light-brown;
 }
 
-@media (max-width: 32em){
+@media (max-width: 32em) {
     .nav {
         flex-direction: column;
         justify-content: start;
@@ -54,12 +60,18 @@
         width: 100%;
     }
 
-    .nav a {
-        height: 100%;
-        padding-left: 0.5em;
+    .nav li {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
     }
 
-    .site-title{
-        font-size: 2rem;
+    .nav a {
+        height: 100%;
+        //padding-left: 0.5em;
+    }
+
+    .site-title {
+        margin-right: auto;
+        margin-left: auto;
     }
 }

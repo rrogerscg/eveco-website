@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as *;
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    background-color: $value;
+    padding: 1rem 2rem;
+  }
+}
