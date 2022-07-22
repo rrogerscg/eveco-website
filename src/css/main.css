@@ -118,7 +118,7 @@ code {
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 1rem 2rem;
   position: sticky;
   top: 0;
 }
@@ -145,14 +145,16 @@ code {
   padding-left: 1rem;
   padding-right: 1rem;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .nav li.active {
-  background-color: #493421;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 4px solid #A6AD86;
 }
 
 .nav li:hover {
-  background-color: #7B532E;
+  background-color: #A6AD86;
 }
 
 @media (max-width: 32em) {
@@ -164,7 +166,7 @@ code {
     float: left;
     padding-right: 0;
     padding-left: 0;
-    border-right: 0.5rem solid #7B532E;
+    border-right: 4px solid #A6AD86;
   }
   .nav ul {
     flex-direction: column;
@@ -178,6 +180,9 @@ code {
   }
   .nav a {
     height: 100%;
+  }
+  .nav li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
   }
   .site-title {
     margin-right: auto;

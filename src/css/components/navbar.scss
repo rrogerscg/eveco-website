@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
 }
@@ -31,15 +31,17 @@
     padding-left: 1rem;
     padding-right: 1rem;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 
 .nav li.active {
-    background-color: $dark-brown;
+    background-color: rgba(0.1, 0.1, 0.1, 0.4);
+    border-bottom: 4px solid $light-green;
 }
 
 .nav li:hover {
-    background-color: $light-brown;
+    background-color: $light-green;
 }
 
 @media (max-width: 32em) {
@@ -51,7 +53,7 @@
         float: left;
         padding-right: 0;
         padding-left: 0;
-        border-right: 0.5rem solid $light-brown
+        border-right: 4px solid $light-green
     }
 
     .nav ul {
@@ -69,6 +71,10 @@
     .nav a {
         height: 100%;
         //padding-left: 0.5em;
+    }
+
+    .nav li:hover {
+        background-color: rgba(0.1, 0.1, 0.1, 0.4);
     }
 
     .site-title {
