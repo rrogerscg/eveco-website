@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as *;
 
-@each $color, $value in $theme-colors {
+@each $color, $value in $active-theme {
   .btn-#{$color} {
     background-color: $value;
     padding: 1rem 2rem;

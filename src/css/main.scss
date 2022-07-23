@@ -13,7 +13,9 @@
 
 // pages
 @use "pages/home";
+@use "pages/projects";
 
 // components
 @use "components/navbar";
 @use "components/button";
+@use "components/card";

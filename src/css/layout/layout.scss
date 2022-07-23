@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #E6CE9A;
+  color: map-get($active-theme, "text");
   border: none;
 }
 
@@ -17,7 +17,6 @@
 }
 
 .App-header {
-  background-color: #282C34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,21 +30,19 @@
 
 body, html, #root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+                "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
-  color: $dark-brown;
-  background-image: $topo-map;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #111111;
+  background-color: map-get($active-theme, "darkest");
 }
 
 
 hr {
-  border: 0.1rem solid $medium-brown;
+  border: 0.1rem solid map-get($active-theme,"tertiary");
 }
 
 code {
@@ -55,7 +52,7 @@ code {
 .container {
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(0.1, 0.1, 0.1, 0.90);
+  background-color: map-get($active-theme, "transparent-darkest");
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -70,16 +67,21 @@ code {
   margin: 2rem;
 }
 
-.bg-light-green {
-  background-color: $light-green;
+.bg-color-primary {
+  background-color: map-get($active-theme, "primary");
 }
+
+.bg-color-secondary {
+  background-color: map-get($active-theme, "secondary");
+}
+
+.bg-color-tertiary {
+  background-color: map-get($active-theme, "tertiary");
+}
+
 
 .opaque {
   opacity: 1;
-}
-
-.bg-dark-green {
-  background-color: map-get($theme-colors, "secondary");
 }
 
 .padding-large {

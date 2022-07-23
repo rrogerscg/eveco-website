@@ -1,7 +1,12 @@
 @use "../abstracts/variables" as *;
 
 .hero-title {
+    background-image: $hero-image;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 15vw;
+    margin: 0;
+    min-height: 500px;
 }
 
 @media (max-width: 32em) {

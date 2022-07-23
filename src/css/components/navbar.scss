@@ -1,7 +1,6 @@
 @use '../abstracts/variables' as *;
 
 .nav {
-    background-color: $dark-green;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
@@ -13,6 +12,7 @@
 
 .site-title {
     font-size: 2rem;
+    font-weight: bold;
 }
 .nav ul {
     margin: 0;
@@ -36,12 +36,12 @@
 
 
 .nav li.active {
-    background-color: rgba(0.1, 0.1, 0.1, 0.4);
-    border-bottom: 4px solid $light-green;
+    background-color: map-get($active-theme, "active-link");
+    border-bottom: 4px solid map-get($active-theme, "secondary");
 }
 
 .nav li:hover {
-    background-color: $light-green;
+    background-color: map-get($active-theme, "secondary");
 }
 
 @media (max-width: 32em) {
@@ -53,7 +53,7 @@
         float: left;
         padding-right: 0;
         padding-left: 0;
-        border-right: 4px solid $light-green
+        border-right: 4px solid map-get($active-theme, "secondary")
     }
 
     .nav ul {
@@ -70,11 +70,10 @@
 
     .nav a {
         height: 100%;
-        //padding-left: 0.5em;
     }
 
     .nav li:hover {
-        background-color: rgba(0.1, 0.1, 0.1, 0.4);
+        background-color: map-get($active-theme, "active-link");
     }
 
     .site-title {

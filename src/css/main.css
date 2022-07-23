@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #E6CE9A;
+  color: #61758E;
   border: none;
 }
 
@@ -17,7 +17,6 @@
 }
 
 .App-header {
-  background-color: #282C34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,14 +29,11 @@
 body, html, #root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
-  color: #493421;
-  background-image: url("../../../public/topographical-map.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #111111;
 }
 
@@ -52,7 +48,7 @@ code {
 .container {
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,16 +63,20 @@ code {
   margin: 2rem;
 }
 
-.bg-light-green {
-  background-color: #A6AD86;
+.bg-color-primary {
+  background-color: white;
+}
+
+.bg-color-secondary {
+  background-color: #77A5DF;
+}
+
+.bg-color-tertiary {
+  background-color: #623D2A;
 }
 
 .opaque {
   opacity: 1;
-}
-
-.bg-dark-green {
-  background-color: #232A1C;
 }
 
 .padding-large {
@@ -104,7 +104,12 @@ code {
   }
 }
 .hero-title {
+  background-image: url("../../../public/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 15vw;
+  margin: 0;
+  min-height: 500px;
 }
 
 @media (max-width: 32em) {
@@ -112,8 +117,12 @@ code {
     font-size: 20vw;
   }
 }
+@media (max-width: 32em) {
+  .project-header {
+    margin-bottom: 20px;
+  }
+}
 .nav {
-  background-color: #232A1C;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -125,6 +134,7 @@ code {
 
 .site-title {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .nav ul {
@@ -149,12 +159,12 @@ code {
 }
 
 .nav li.active {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-bottom: 4px solid #A6AD86;
+  background-color: #5EB8AC;
+  border-bottom: 4px solid #77A5DF;
 }
 
 .nav li:hover {
-  background-color: #A6AD86;
+  background-color: #77A5DF;
 }
 
 @media (max-width: 32em) {
@@ -166,7 +176,7 @@ code {
     float: left;
     padding-right: 0;
     padding-left: 0;
-    border-right: 4px solid #A6AD86;
+    border-right: 4px solid #77A5DF;
   }
   .nav ul {
     flex-direction: column;
@@ -182,7 +192,7 @@ code {
     height: 100%;
   }
   .nav li:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #5EB8AC;
   }
   .site-title {
     margin-right: auto;
@@ -190,12 +200,37 @@ code {
   }
 }
 .btn-primary {
-  background-color: #A6AD86;
+  background-color: white;
   padding: 1rem 2rem;
 }
 
 .btn-secondary {
-  background-color: #232A1C;
+  background-color: #77A5DF;
+  padding: 1rem 2rem;
+}
+
+.btn-tertiary {
+  background-color: #623D2A;
+  padding: 1rem 2rem;
+}
+
+.btn-text {
+  background-color: #61758E;
+  padding: 1rem 2rem;
+}
+
+.btn-darkest {
+  background-color: #111111;
+  padding: 1rem 2rem;
+}
+
+.btn-transparent-darkest {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1rem 2rem;
+}
+
+.btn-active-link {
+  background-color: #5EB8AC;
   padding: 1rem 2rem;
 }
 
@@ -219,6 +254,38 @@ code {
   padding: 1rem 2rem;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  background-color: pink;
+  border-radius: 10px;
+}
+
+.card-item {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+@media (max-width: 32em) {
+  .card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 /* Table of contents
   -------------------------------
   -- base imports
