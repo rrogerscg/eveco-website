@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/eveco-website/static/css/main.81412e77.css",
-    "main.js": "/eveco-website/static/js/main.9dd90ba9.js",
+    "main.css": "/eveco-website/static/css/main.fcff437a.css",
+    "main.js": "/eveco-website/static/js/main.82ab5b06.js",
     "static/js/787.55c7f652.chunk.js": "/eveco-website/static/js/787.55c7f652.chunk.js",
     "static/media/hero-image.jpg": "/eveco-website/static/media/hero-image.91b63365f572c95daf0f.jpg",
     "index.html": "/eveco-website/index.html",
-    "main.81412e77.css.map": "/eveco-website/static/css/main.81412e77.css.map",
-    "main.9dd90ba9.js.map": "/eveco-website/static/js/main.9dd90ba9.js.map",
+    "main.fcff437a.css.map": "/eveco-website/static/css/main.fcff437a.css.map",
+    "main.82ab5b06.js.map": "/eveco-website/static/js/main.82ab5b06.js.map",
     "787.55c7f652.chunk.js.map": "/eveco-website/static/js/787.55c7f652.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81412e77.css",
-    "static/js/main.9dd90ba9.js"
+    "static/css/main.fcff437a.css",
+    "static/js/main.82ab5b06.js"
   ]
 }
