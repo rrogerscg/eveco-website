@@ -27,12 +27,12 @@ $organic-theme: (
 
 $clean-theme: (
         "primary": white,
-        "secondary": $light-blue,
-        "tertiary": $medium-brown,
+        "secondary": $aqua,
+        "tertiary": $light-blue,
         "text": $medium-blue,
         "darkest": $dark-black,
         "transparent-darkest": $full-transparent,
-        "active-link": $aqua,
+        "active-link": $light-blue,
 );
 
 
@@ -51,4 +51,4 @@ $active-theme: map-merge($clean-theme, $shared-theme);
 /* images */
 
 $topo-map: url("../../../public/topographical-map.svg");
-$hero-image: url("../../../public/hero-image.png");
+$hero-image: url("../../../public/hero-image.jpg");

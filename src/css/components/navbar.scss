@@ -36,8 +36,8 @@
 
 
 .nav li.active {
-    background-color: map-get($active-theme, "active-link");
-    border-bottom: 4px solid map-get($active-theme, "secondary");
+    background-color: map-get($active-theme, "secondary");
+    border-bottom: 4px solid map-get($active-theme, "active-link");
 }
 
 .nav li:hover {
