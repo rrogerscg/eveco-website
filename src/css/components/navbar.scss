@@ -50,7 +50,7 @@
 
 .nav li.active {
     background-color: map-get($active-theme, "secondary");
-    border-bottom: 4px solid map-get($active-theme, "active-link");
+    //border-bottom: 4px solid map-get($active-theme, "active-link");
 }
 
 .nav li:hover {
@@ -67,6 +67,10 @@
         padding-right: 0;
         padding-left: 0;
         border-right: 4px solid map-get($active-theme, "secondary")
+    }
+
+    .link-container {
+        border-bottom: none;
     }
 
     .nav ul {

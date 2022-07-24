@@ -3,13 +3,13 @@ export default function Card({title, footer}) {
         <div className="card-container">
             <div className="card">
                 <div className="card-item">
-                    <p>{title}</p>
+                    {title}
                 </div>
                 <div className="card-item">
-                    <p>Card Body</p>
+                    Card Body
                 </div>
                 <div className="card-item">
-                    <p>{footer}</p>
+                    {footer}
                 </div>
             </div>
         </div>
