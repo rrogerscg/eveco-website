@@ -1,3 +1,7 @@
 export default function Services() {
-    return <h1 className="page-item">Geo Services</h1>
+    return (
+        <div className="services-page">
+            <h1>Geo Services</h1>
+        </div>
+        )
 }

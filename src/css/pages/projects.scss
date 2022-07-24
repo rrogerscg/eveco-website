@@ -1,18 +1,12 @@
 @use '../abstracts/variables' as *;
 
 .cards-container {
-  display: inline-flex;
+  padding-top: 1rem;
+  display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   width: 100%;
   height: 100%;
-  gap: 2rem;
   background-color: map-get($active-theme, "primary");
   margin: auto;
-}
-
-@media (max-width: 32em) {
-
-  .project-header {
-    margin-bottom: 20px;
-  }
 }
