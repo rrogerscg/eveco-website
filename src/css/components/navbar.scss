@@ -3,31 +3,36 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    //align-items: stretch;
-    gap: 2rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0 2rem 0;
     position: sticky;
     top: 0;
 }
 
+.nav li.active {
+    background-color: map-get($active-theme, "secondary");
+    height: 100%;
+    border-bottom: 0.25rem solid map-get($active-theme, "accent");
+}
+
+// ToDo: add active link color - add gradient
+
 .link-container {
     display: flex;
     width: 100%;
-    justify-content: end;
-    border-bottom: 1px solid map-get($active-theme, "darkest");
+    justify-content: flex-end;
+    border-bottom: 0.1rem solid map-get($active-theme, "darkest");
 }
 
 .site-title {
+    margin-left: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    border-bottom: 0.1rem solid map-get($active-theme, "darkest");
+
 }
 .nav ul {
-    margin: 0;
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    float: right;
     height: 100%;
 }
 
@@ -47,11 +52,6 @@
 
 }
 
-
-.nav li.active {
-    background-color: map-get($active-theme, "secondary");
-    //border-bottom: 4px solid map-get($active-theme, "active-link");
-}
 
 .nav li:hover {
     background-color: map-get($active-theme, "secondary");

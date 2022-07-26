@@ -6,16 +6,16 @@ export default function Projects() {
             <h1 className="page-header">Projects</h1>
             <div  className="content-container ">
                 <div className="cards-container page-item">
-                    <Card className="page-item" title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
-                    <Card title="test title" footer="test footer"/>
+                    <Card className="page-item" title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
+                    <Card title="test title" description="test footer"/>
                 </div>
             </div>
         </div>

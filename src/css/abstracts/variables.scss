@@ -26,13 +26,14 @@ $organic-theme: (
 );
 
 $clean-theme: (
-        "primary": white,
-        "secondary": $aqua,
-        "tertiary": $light-blue,
-        "text": $medium-blue,
-        "darkest": $dark-black,
-        "transparent-darkest": $full-transparent,
-        "active-link": $light-blue,
+  "primary": white,
+  "secondary": $aqua,
+  "tertiary": $light-brown,
+  "accent": $light-blue,
+  "text": black,
+  "darkest": $dark-brown,
+  "transparent-darkest": $full-transparent,
+  "active-link": $light-blue,
 );
 
 

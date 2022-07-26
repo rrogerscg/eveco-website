@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #61758E;
+  color: black;
   border: none;
 }
 
@@ -33,11 +33,11 @@ body, html, #root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  background-color: #111111;
+  background-color: #493421;
 }
 
 hr {
-  border: 1px solid #77A5DF;
+  border: 1px solid #7B532E;
 }
 
 code {
@@ -84,7 +84,7 @@ code {
 }
 
 .bg-color-tertiary {
-  background-color: #77A5DF;
+  background-color: #7B532E;
 }
 
 .opaque {
@@ -135,31 +135,34 @@ code {
 .nav {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 0 2rem 0;
   position: sticky;
   top: 0;
+}
+
+.nav li.active {
+  background-color: #5EB8AC;
+  height: 100%;
+  border-bottom: 0.25rem solid #77A5DF;
 }
 
 .link-container {
   display: flex;
   width: 100%;
-  justify-content: end;
-  border-bottom: 1px solid #111111;
+  justify-content: flex-end;
+  border-bottom: 0.1rem solid #493421;
 }
 
 .site-title {
+  margin-left: 1rem;
   font-size: 2rem;
   font-weight: bold;
+  border-bottom: 0.1rem solid #493421;
 }
 
 .nav ul {
-  margin: 0;
   list-style: none;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  float: right;
   height: 100%;
 }
 
@@ -177,10 +180,6 @@ code {
   padding-right: 1rem;
   cursor: pointer;
   box-sizing: border-box;
-}
-
-.nav li.active {
-  background-color: #5EB8AC;
 }
 
 .nav li:hover {
@@ -233,17 +232,22 @@ code {
 }
 
 .btn-tertiary {
+  background-color: #7B532E;
+  padding: 1rem 2rem;
+}
+
+.btn-accent {
   background-color: #77A5DF;
   padding: 1rem 2rem;
 }
 
 .btn-text {
-  background-color: #61758E;
+  background-color: black;
   padding: 1rem 2rem;
 }
 
 .btn-darkest {
-  background-color: #111111;
+  background-color: #493421;
   padding: 1rem 2rem;
 }
 
@@ -309,9 +313,27 @@ code {
 .card-item {
   display: flex;
   align-items: center;
+  flex-direction: row;
   margin: auto;
+}
+
+.card-footer {
+  background-color: #7B532E;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
   width: 100%;
-  height: 100%;
+  flex-grow: 1;
+}
+
+.card-footer-item {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.card-body {
+  height: 60%;
 }
 
 @media (max-width: 32em) {
