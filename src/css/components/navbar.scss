@@ -11,7 +11,7 @@
 .nav li.active {
     background-color: map-get($active-theme, "secondary");
     height: 100%;
-    border-bottom: 0.25rem solid map-get($active-theme, "accent");
+    border-bottom: 0.25rem solid map-get($active-theme, "tertiary");
 }
 
 // ToDo: add active link color - add gradient

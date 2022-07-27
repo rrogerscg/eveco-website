@@ -41,34 +41,36 @@ body, html, #root {
 
 
 hr {
-  border: 1px solid map-get($active-theme,"tertiary");
+  border: 1px solid map-get($active-theme, "darkest");
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.content-container {
-  margin: 0 auto;
+.body-container {
+  text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  background-color: map-get($active-theme, "primary");
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
-  background-color: map-get($active-theme, "transparent-darkest");
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: map-get($active-theme, "primary");
   flex-grow: 1;
 }
 
 .container-item {
-  padding: 1rem;
+  display: flex;
+  flex-grow: 1;
 }
 
 .page-header {
@@ -100,13 +102,6 @@ code {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-
-.no-margin-left-right-bottom {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-}
-
 
 @media (max-width: 32em) {
   .App {

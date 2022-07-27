@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-        <div className="container">
+        <div className="body-container">
             <Routes>
                 <Route path="/eveco-website" element={<Home />} />
                 <Route path="/eveco-website/services" element={<Services />} />

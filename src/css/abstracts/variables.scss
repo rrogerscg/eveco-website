@@ -10,7 +10,7 @@ $aqua:          #5EB8AC;
 $red:           #5E221B;
 $medium-blue:   #61758E;
 $light-blue:    #77A5DF;
-$dark-black:    #111111;
+$black:    #111111;
 $transparent-black: rgba(0.1, 0.1, 0.1, 0.9);
 $transparent-medium-black: rgba(0.1, 0.1, 0.1, 0.4);
 $full-transparent: rgba(0, 0, 0, 0);
@@ -20,7 +20,7 @@ $organic-theme: (
   "secondary": $light-green,
   "tertiary": $medium-brown,
   "text": $cream,
-  "darkest": $dark-black,
+  "darkest": black,
   "transparent-darkest": $transparent-black,
   "active-link": $transparent-medium-black,
 );
@@ -28,10 +28,10 @@ $organic-theme: (
 $clean-theme: (
   "primary": white,
   "secondary": $aqua,
-  "tertiary": $light-brown,
-  "accent": $light-blue,
+  "tertiary": $light-blue,
+  "accent": $light-brown,
   "text": black,
-  "darkest": $dark-brown,
+  "darkest": black,
   "transparent-darkest": $full-transparent,
   "active-link": $light-blue,
 );
@@ -53,3 +53,4 @@ $active-theme: map-merge($clean-theme, $shared-theme);
 
 $topo-map: url("../../../public/topographical-map.svg");
 $hero-image: url("../../../public/hero-image.jpg");
+$flood-map: url("../../../public/flood-gis-web.jpg");

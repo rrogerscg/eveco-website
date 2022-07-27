@@ -33,38 +33,40 @@ body, html, #root {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
-  background-color: #493421;
+  background-color: black;
 }
 
 hr {
-  border: 1px solid #7B532E;
+  border: 1px solid black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.content-container {
-  margin: 0 auto;
+.body-container {
+  text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  background-color: white;
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0);
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
   flex-grow: 1;
 }
 
 .container-item {
-  padding: 1rem;
+  display: flex;
+  flex-grow: 1;
 }
 
 .page-header {
@@ -84,7 +86,7 @@ code {
 }
 
 .bg-color-tertiary {
-  background-color: #7B532E;
+  background-color: #77A5DF;
 }
 
 .opaque {
@@ -94,12 +96,6 @@ code {
 .padding-large {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.no-margin-left-right-bottom {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
 }
 
 @media (max-width: 32em) {
@@ -150,14 +146,14 @@ code {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  border-bottom: 0.1rem solid #493421;
+  border-bottom: 0.1rem solid black;
 }
 
 .site-title {
   margin-left: 1rem;
   font-size: 2rem;
   font-weight: bold;
-  border-bottom: 0.1rem solid #493421;
+  border-bottom: 0.1rem solid black;
 }
 
 .nav ul {
@@ -232,12 +228,12 @@ code {
 }
 
 .btn-tertiary {
-  background-color: #7B532E;
+  background-color: #77A5DF;
   padding: 1rem 2rem;
 }
 
 .btn-accent {
-  background-color: #77A5DF;
+  background-color: #7B532E;
   padding: 1rem 2rem;
 }
 
@@ -247,7 +243,7 @@ code {
 }
 
 .btn-darkest {
-  background-color: #493421;
+  background-color: black;
   padding: 1rem 2rem;
 }
 
@@ -285,7 +281,6 @@ code {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  height: 100%;
   background-color: white;
   margin-top: 5rem;
   margin-left: auto;
@@ -318,7 +313,7 @@ code {
 }
 
 .card-footer {
-  background-color: #7B532E;
+  background-color: #77A5DF;
   flex-direction: column;
   margin: auto;
   align-items: center;
@@ -341,6 +336,30 @@ code {
     padding-top: 1rem;
   }
 }
+.info-panel-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  background-color: white;
+  margin: 5rem auto;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.flood-image {
+  min-width: 400px;
+  min-height: 400px;
+  background-image: url("../../../public/flood-gis-web.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info-panel-item {
+  display: flex;
+  flex-grow: 1;
+}
+
 /* Table of contents
   -------------------------------
   -- base imports
