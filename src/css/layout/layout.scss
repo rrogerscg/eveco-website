@@ -82,7 +82,7 @@ code {
 }
 
 .bg-color-primary {
-  background-color: map-get($active-theme, "primary");
+  background-color: map-get($active-theme, "primary") !important;
 }
 
 .bg-color-secondary {

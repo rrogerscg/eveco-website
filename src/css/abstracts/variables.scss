@@ -8,8 +8,8 @@ $medium-brown:  #623D2A;
 $light-brown:   #7B532E;
 $aqua:          #5EB8AC;
 $red:           #5E221B;
-$medium-blue:   #61758E;
-$light-blue:    #77A5DF;
+$medium-blue:   #28698F;
+$light-blue:    #6AC9FF;
 $black:    #111111;
 $transparent-black: rgba(0.1, 0.1, 0.1, 0.9);
 $transparent-medium-black: rgba(0.1, 0.1, 0.1, 0.4);
@@ -28,15 +28,13 @@ $organic-theme: (
 $clean-theme: (
   "primary": white,
   "secondary": $aqua,
-  "tertiary": $light-blue,
+  "tertiary": #39887D,
   "accent": $light-brown,
   "text": black,
   "darkest": black,
   "transparent-darkest": $full-transparent,
   "active-link": $light-blue,
 );
-
-
 
 $shared-theme: (
   "warning": yellow,

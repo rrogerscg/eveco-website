@@ -78,7 +78,7 @@ code {
 }
 
 .bg-color-primary {
-  background-color: white;
+  background-color: white !important;
 }
 
 .bg-color-secondary {
@@ -86,7 +86,7 @@ code {
 }
 
 .bg-color-tertiary {
-  background-color: #77A5DF;
+  background-color: #39887D;
 }
 
 .opaque {
@@ -139,7 +139,7 @@ code {
 .nav li.active {
   background-color: #5EB8AC;
   height: 100%;
-  border-bottom: 0.25rem solid #77A5DF;
+  border-bottom: 0.25rem solid #39887D;
 }
 
 .link-container {
@@ -210,7 +210,7 @@ code {
     height: 100%;
   }
   .nav li:hover {
-    background-color: #77A5DF;
+    background-color: #6AC9FF;
   }
   .site-title {
     margin-right: auto;
@@ -228,7 +228,7 @@ code {
 }
 
 .btn-tertiary {
-  background-color: #77A5DF;
+  background-color: #39887D;
   padding: 1rem 2rem;
 }
 
@@ -253,7 +253,7 @@ code {
 }
 
 .btn-active-link {
-  background-color: #77A5DF;
+  background-color: #6AC9FF;
   padding: 1rem 2rem;
 }
 
@@ -281,7 +281,6 @@ code {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
-  background-color: white;
   margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
@@ -313,7 +312,7 @@ code {
 }
 
 .card-footer {
-  background-color: #77A5DF;
+  background-color: #39887D;
   flex-direction: column;
   margin: auto;
   align-items: center;
@@ -338,13 +337,22 @@ code {
 }
 .info-panel-container {
   display: flex;
-  flex-direction: row;
-  width: 70%;
-  background-color: white;
-  margin: 5rem auto;
-  flex-grow: 1;
+  flex-direction: column;
+  width: 80%;
+  margin: 3rem auto;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+hr {
+  width: 100%;
+  height: 1rem;
+  border-radius: 1rem;
 }
 
 .flood-image {
@@ -358,6 +366,14 @@ code {
 .info-panel-item {
   display: flex;
   flex-grow: 1;
+}
+
+.large-text {
+  font-size: 2rem;
+}
+
+.medium-text {
+  font-size: 1.5rem;
 }
 
 /* Table of contents
