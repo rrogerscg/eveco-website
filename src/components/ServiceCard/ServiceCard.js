@@ -1,13 +1,10 @@
-export default function ServiceCard({title, description}) {
+export default function ServiceCard({title}) {
     return (
-        <div className="card-container">
-            <div className="card bg-color-primary">
-                <div className="card-item card-footer">
-                    <div className="card-footer-item">
+        <div className="service-card-container">
+            <div className="card">
+                <div className="card-item card-footer bg-color-primary round-medium bg-image-global">
+                    <div className="service-card-footer-item">
                         {title}
-                    </div>
-                    <div className="card-footer-item">
-                        {description}
                     </div>
                 </div>
             </div>

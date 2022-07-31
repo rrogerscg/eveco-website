@@ -1,6 +1,6 @@
 @use '../abstracts/variables' as *;
 
-.cards-container {
+@mixin cards-container {
   display: flex;
   flex-wrap: wrap;
   width: 70%;
@@ -10,12 +10,39 @@
   gap: 2rem;
 }
 
-.card-container {
+@mixin card-container {
   margin: auto;
   width: 20rem;
   aspect-ratio: 1 / 1;
   background-color: map-get($active-theme, "secondary");
   border-radius: 10px;
+}
+
+.cards-container {
+  @include cards-container;
+}
+
+.service-cards-container {
+  @include cards-container;
+  width: 90%;
+}
+
+.card-container {
+  @include card-container;
+}
+
+.service-card-container {
+  @include card-container;
+  width: 10rem;
+}
+
+.bg-image-global {
+  background-image: $global-image;
+  background-size: cover;
+}
+
+.round-medium {
+  border-radius: 5rem;
 }
 
 .card {
@@ -44,10 +71,21 @@
   flex-grow: 1;
 }
 
-.card-footer-item {
+@mixin card-footer-item {
   display: flex;
   align-items: center;
   margin: auto;
+}
+
+.card-footer-item {
+  @include card-footer-item;
+}
+
+.service-card-footer-item {
+  @include card-footer-item;
+  color: white;
+  background-color: rgba(0.5, 0.5, 0.5, 0.5);
+  border-radius: 2rem;
 }
 
 .card-body {

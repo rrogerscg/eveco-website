@@ -1,3 +1,13 @@
+import InfoPanel from "../../components/InfoPanel/InfoPanel";
+import InfoPanelDescription from "../../components/InfoPanelDescription/InfoPanelDescription";
+
 export default function Pricing() {
-    return <h1 className="page-item">Pricing</h1>
+    return (
+        <>
+            <div className="page-header"></div>
+            <div className="content-container">
+                <InfoPanel component={<InfoPanelDescription />}/>
+            </div>
+        </>
+    )
 }

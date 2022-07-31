@@ -6,6 +6,8 @@ import About from "./pages/About";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import {Routes, Route} from "react-router-dom";
+import InfoPanel from "./components/InfoPanel/InfoPanel";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
                 <Route path="/eveco-website/contact" element={<Contact />} />
                 <Route path="/eveco-website/pricing" element={<Pricing />} />
             </Routes>
+        </div>
+        <div className="content-container">
+            <InfoPanel component={<Footer />}/>
         </div>
     </div>
   );

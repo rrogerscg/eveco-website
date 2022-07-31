@@ -1,7 +1,13 @@
+import InfoPanel from "../../components/InfoPanel/InfoPanel";
+import InfoPanelDescription from "../../components/InfoPanelDescription/InfoPanelDescription";
+
 export default function Contact() {
     return (
-        <div className="contact-page">
-            <h1 className="page-item">Contact</h1>
-        </div>
+        <>
+            <div className="page-header"></div>
+            <div className="content-container">
+                <InfoPanel component={<InfoPanelDescription />}/>
+            </div>
+        </>
     )
 }
