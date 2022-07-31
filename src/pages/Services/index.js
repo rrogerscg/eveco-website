@@ -4,7 +4,7 @@ import ServiceCardGallery from "../../components/ServiceCardGallery/ServiceCardG
 export default function Services() {
     return (
         <>
-            <div className="page-header"></div>
+            <h1 className="page-header">Content Coming</h1>
             <div className="content-container bg-color-tertiary">
                 <InfoPanel component={<ServiceCardGallery />}/>
             </div>

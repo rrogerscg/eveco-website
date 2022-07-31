@@ -37,11 +37,6 @@ body {
   background-color: #111111;
 }
 
-hr {
-  border: 1px solid white;
-  background-color: white;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }

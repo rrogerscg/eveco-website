@@ -4,7 +4,7 @@ import InfoPanelDescription from "../../components/InfoPanelDescription/InfoPane
 export default function About() {
     return (
         <>
-            <div className="page-header"></div>
+            <h1 className="page-header">Content Coming</h1>
             <div className="content-container">
                 <InfoPanel component={<InfoPanelDescription />}/>
             </div>

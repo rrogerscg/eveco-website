@@ -5,7 +5,7 @@ export default function InfoPanelDescription() {
         "decision-making for informed consensus approaches to promote lasting benefit in natural resource and " +
         "community planning."
 
-    const allConnected = "It's all connected."
+    const allConnected = "- It's all connected -"
 
     return (
         <div className="info-panel-container">

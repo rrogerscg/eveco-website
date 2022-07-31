@@ -26,7 +26,14 @@
   width: 100%;
 }
 
-
+hr {
+  width: 100%;
+  height: 1rem;
+  border-radius: 1rem;
+  border-color: black;
+  background-color: map-get($active-theme, "tertiary");
+  border-width: 5px;
+}
 
 body, html, #root {
   margin: 0;
@@ -39,13 +46,15 @@ body, html, #root {
   background-color: map-get($active-theme, "darkest");
 }
 
-
-hr {
-  border: 1px solid map-get($active-theme, "darkest");
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.page-header {
+  color: white;
+  display: flex;
+  align-items: center;
+  align-self: center;
 }
 
 .body-container {
