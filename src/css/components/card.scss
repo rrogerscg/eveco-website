@@ -24,7 +24,7 @@
 
 .service-cards-container {
   @include cards-container;
-  width: 90%;
+  width: 60%;
 }
 
 .card-container {
@@ -54,12 +54,17 @@
   height: 100%;
 }
 
+.card-title {
+  font-size: 1.5rem;
+}
+
 
 .card-item {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin: auto;
+  width: 100%;
+  justify-content: center;
 }
 
 .card-footer {

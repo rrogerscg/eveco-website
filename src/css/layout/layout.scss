@@ -49,12 +49,20 @@ body, html, #root {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-.page-header {
+@mixin page-header {
   color: white;
   display: flex;
   align-items: center;
   align-self: center;
+  min-height: 500px;
+}
+.page-header {
+  @include page-header;
+}
+
+.page-header-short {
+  @include page-header;
+  min-height: 250px;
 }
 
 .body-container {
@@ -82,9 +90,6 @@ code {
   flex-grow: 1;
 }
 
-.page-header {
-  min-height: 500px;
-}
 
 .page-item {
   margin: 2rem;

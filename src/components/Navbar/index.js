@@ -9,8 +9,8 @@ export default function Navbar() {
                     <CustomLink to="/eveco-website">Home</CustomLink>
                     <CustomLink to="/eveco-website/services">Services</CustomLink>
                     <CustomLink to="/eveco-website/projects">Projects</CustomLink>
+                    <CustomLink to="/eveco-website/team">Team</CustomLink>
                     <CustomLink to="/eveco-website/pricing">Pricing</CustomLink>
-                    <CustomLink to="/eveco-website/about">About</CustomLink>
                     <CustomLink to="/eveco-website/contact">Contact</CustomLink>
                 </ul>
             </div>
