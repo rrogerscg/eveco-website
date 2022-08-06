@@ -1,12 +1,24 @@
-import InfoPanel from "../../components/InfoPanel/InfoPanel";
 import Teammate from "../../components/Teammate/Teammate";
 
 export default function Team() {
+
+    const vinceDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " +
+        "incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation " +
+        "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in " +
+        "voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non " +
+        "proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+    const shortDescription = "Lorem ipsum dolor sit amet"
+
     return (
         <>
-            <h1 className="page-header-short">Teammates</h1>
+            <div className="page-header-container">
+                <h1 className="page-header-short">Teammates</h1>
+            </div>
             <div className="content-container">
-                <InfoPanel component={<Teammate picture={"Picture"} name={"Vincent"} shortDescription={"Short Description"} longDescription={"Long Description"}/>}/>
+                <Teammate picture={"Picture"} name={"Vince Rogers"} shortDescription={shortDescription} longDescription={vinceDescription}/>
+                <Teammate picture={"Picture"} name={"Vince Rogers"} shortDescription={shortDescription} longDescription={vinceDescription}/>
+                <Teammate picture={"Picture"} name={"Vince Rogers"} shortDescription={shortDescription} longDescription={vinceDescription}/>
             </div>
         </>
     )

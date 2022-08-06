@@ -29,7 +29,7 @@ $clean-theme: (
   "primary": white,
   "secondary": $aqua,
   "tertiary": #39887D,
-  "accent": $light-brown,
+  "accent": $medium-blue,
   "text": black,
   "darkest": black,
   "transparent-darkest": $full-transparent,
@@ -53,3 +53,16 @@ $topo-map: url("../../../public/topographical-map.svg");
 $hero-image: url("../../../public/hero-image.jpg");
 $flood-map: url("../../../public/flood-gis-web.jpg");
 $global-image: url("../../../public/global.jpg");
+$vince-image: url("../../../public/vincente.png");
+
+// mixins
+@mixin info-panel-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3rem auto;
+  //flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

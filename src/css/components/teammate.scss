@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as *;
+
+.teammate-container {
+  min-height: 30rem;
+}
+
+.teammate-background {
+  position: absolute;
+  width: 53%;
+  min-height: 30rem;
+  background-color: map-get($active-theme, "secondary");
+  transform: skewX(-10deg);
+  transform-origin: 100%;
+  left: -3rem;
+}
+
+.teammate-panel-container {
+  @include info-panel-container;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.teammate-description {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 300px;
+}
+
+.teammate-name {
+  display: flex;
+  font-size: 2rem;
+  color: map-get($active-theme, "accent")
+}
+
+.teammate-long-desc {
+  font-weight: normal;
+}
+
+
+.teammate-image {
+  background-image: $vince-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+}
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 32em) {
+  .teammate-background {
+    display: None;
+  }
+
+  .teammate-image {
+    display: None;
+  }
+}

@@ -22,9 +22,9 @@ function App() {
                 <Route path="/eveco-website/pricing" element={<Pricing />} />
                 <Route path="/eveco-website/contact" element={<Contact />} />
             </Routes>
-        </div>
-        <div className="content-container">
-            <InfoPanel component={<Footer />}/>
+            <div className="content-container">
+                <InfoPanel component={<Footer />}/>
+            </div>
         </div>
     </div>
   );

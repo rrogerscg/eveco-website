@@ -60,9 +60,20 @@ code {
   @include page-header;
 }
 
+.page-header-container {
+  @include page-header;
+  width: 100%;
+  min-height: 250px;
+  background-color: map-get($active-theme, "accent");
+  display: flex;
+  justify-content: center;
+
+}
+
 .page-header-short {
   @include page-header;
   min-height: 250px;
+  justify-content: center;
 }
 
 .body-container {
