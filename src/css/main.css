@@ -135,12 +135,13 @@ code {
     text-align: center;
     flex-direction: row;
     display: flex;
+    overflow: hidden;
   }
-  .container {
+  .body-container {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    margin-left: 7.5rem;
   }
   .page-header {
     margin-bottom: 20px;
@@ -216,6 +217,7 @@ code {
 
 @media (max-width: 32em) {
   .nav {
+    position: fixed;
     flex-direction: column;
     justify-content: start;
     width: 7.5em;
@@ -459,6 +461,7 @@ code {
 
 .teammate-container {
   min-height: 30rem;
+  border-bottom: 2rem solid #5EB8AC;
 }
 
 .teammate-background {
@@ -489,7 +492,7 @@ code {
   display: flex;
   flex-direction: column;
   text-align: start;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .teammate-name {

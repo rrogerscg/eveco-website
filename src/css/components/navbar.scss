@@ -59,6 +59,7 @@
 
 @media (max-width: 32em) {
     .nav {
+        position: fixed;
         flex-direction: column;
         justify-content: start;
         width: 7.5em;

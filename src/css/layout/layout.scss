@@ -133,13 +133,14 @@ code {
     text-align: center;
     flex-direction: row;
     display: flex;
+    overflow: hidden;
   }
 
-  .container {
+  .body-container {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    margin-left: 7.5rem;
   }
 
   .page-header {
