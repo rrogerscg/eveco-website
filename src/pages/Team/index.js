@@ -13,7 +13,8 @@ export default function Team() {
     return (
         <>
             <div className="page-header-container">
-                <h1 className="page-header-short">ROSTER</h1>
+                <h1 className="primary-color">ROSTER</h1>
+                <h3 className="primary-color">- Meet The Team -</h3>
             </div>
             <div className="content-container">
                 <Teammate picture={"Picture"} name={"Vince Rogers"} shortDescription={shortDescription} longDescription={vinceDescription}/>

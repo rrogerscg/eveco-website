@@ -7,21 +7,33 @@
 
 .teammate-background {
   position: absolute;
-  width: 53%;
+  width: 45%;
   min-height: 30rem;
   background-color: map-get($active-theme, "secondary");
   transform: skewX(-10deg);
   transform-origin: 100%;
   left: -3rem;
 }
+.teammate-container:nth-child(even) > .teammate-background {
+  left: auto;
+  right: -3rem;
+}
+
+.teammate-container:nth-child(even) > .container > .teammate-panel-container{
+  flex-direction: row-reverse;
+  .teammate-image {
+    transform: scaleX(-1);
+  }
+}
+
 
 .teammate-panel-container {
   @include info-panel-container;
   width: 80%;
   flex-direction: row;
-  justify-content: space-evenly;
   margin-top: 1rem;
 }
+
 
 .teammate-description {
   display: flex;
@@ -62,6 +74,9 @@
   }
 
   .teammate-image {
-    display: None;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    opacity: 0.4;
   }
 }

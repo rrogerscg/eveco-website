@@ -67,12 +67,16 @@ code {
   background-color: map-get($active-theme, "accent");
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
 
+.primary-color {
+  color: map-get($active-theme, "primary");
 }
 
 .page-header-short {
   @include page-header;
-  min-height: 250px;
+
   justify-content: center;
 }
 
