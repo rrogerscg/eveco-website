@@ -1,5 +1,6 @@
 import ServiceCard from "../ServiceCard/ServiceCard";
 
+// ToDo: load services from mock
 export default function ServiceCardGallery(){
     return (
         <div className="info-panel-item">

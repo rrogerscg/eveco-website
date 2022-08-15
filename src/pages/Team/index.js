@@ -9,7 +9,7 @@ export default function Team() {
         "proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
     const shortDescription = "Lorem ipsum dolor sit amet"
-
+    // ToDo: load teammates from mock
     return (
         <>
             <div className="page-header-container">
