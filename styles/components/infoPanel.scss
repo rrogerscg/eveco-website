@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+
+.info-panel-container {
+  @include info-panel-container;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.flood-image {
+  min-width: 400px;
+  min-height: 400px;
+  background-image: $flood-map;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info-panel-item {
+  display: flex;
+  width: 80%;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+.large-text {
+  font-size: 2rem;
+}
+
+.medium-text {
+  font-size: 1.5rem;
+}

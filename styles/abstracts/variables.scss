@@ -1,0 +1,68 @@
+/* color */
+
+$light-green:   #A6AD86;
+$dark-green:    #232A1C;
+$cream:         #E6CE9A;
+$dark-brown:    #493421;
+$medium-brown:  #623D2A;
+$light-brown:   #7B532E;
+$aqua:          #5EB8AC;
+$red:           #5E221B;
+$medium-blue:   #28698F;
+$light-blue:    #6AC9FF;
+$black:    #111111;
+$transparent-black: rgba(0.1, 0.1, 0.1, 0.9);
+$transparent-medium-black: rgba(0.1, 0.1, 0.1, 0.4);
+$full-transparent: rgba(0, 0, 0, 0);
+
+$organic-theme: (
+  "primary": $dark-green,
+  "secondary": $light-green,
+  "tertiary": $medium-brown,
+  "text": $cream,
+  "darkest": black,
+  "transparent-darkest": $transparent-black,
+  "active-link": $transparent-medium-black,
+);
+
+$clean-theme: (
+  "primary": white,
+  "secondary": $aqua,
+  "tertiary": #39887D,
+  "accent": $medium-blue,
+  "text": black,
+  "darkest": black,
+  "transparent-darkest": $full-transparent,
+  "active-link": $light-blue,
+);
+
+$shared-theme: (
+  "warning": yellow,
+  "error": red,
+  "info": blue,
+  "success": green
+);
+
+// for active theme, we only switch the first parameter of map-merge
+$active-theme: map-merge($clean-theme, $shared-theme);
+
+
+/* images */
+
+$topo-map: url("/topographical-map.svg");
+$hero-image: url("/hero-image.jpg");
+$flood-map: url("/flood-gis-web.jpg");
+$global-image: url("/global.jpg");
+$vince-image: url("/vincente.png");
+
+// mixins
+@mixin info-panel-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 3rem auto;
+  //flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
